@@ -1,10 +1,18 @@
 --------------------------- MODULE tla_insertion ---------------------------
+EXTENDS Naturals, TLC
 
 ----------------------------------------------------------------------------
 \* PlusCal conversion of the algorithm
 
 (*
 --algorithm insertion_sort {
+    variables 
+        n,
+        array \in 1..1000,
+        c,
+        d,
+        t;
+            
     {
         skip;
     }
@@ -13,15 +21,23 @@
 
 ----------------------------------------------------------------------------
 \* BEGIN TRANSLATION
-VARIABLE pc
+CONSTANT defaultInitValue
+VARIABLES n, array, c, d, t, pc
 
-vars == << pc >>
+vars == << n, array, c, d, t, pc >>
 
-Init == /\ pc = "Lbl_1"
+Init == (* Global variables *)
+        /\ n = defaultInitValue
+        /\ array \in 1..1000
+        /\ c = defaultInitValue
+        /\ d = defaultInitValue
+        /\ t = defaultInitValue
+        /\ pc = "Lbl_1"
 
 Lbl_1 == /\ pc = "Lbl_1"
          /\ TRUE
          /\ pc' = "Done"
+         /\ UNCHANGED << n, array, c, d, t >>
 
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
@@ -40,5 +56,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Mon Jan 13 13:42:46 CET 2020 by Pierre Bouillon
+\* Last modified Mon Jan 13 22:31:26 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
