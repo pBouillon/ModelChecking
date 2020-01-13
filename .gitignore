@@ -7,7 +7,7 @@
 
 # TLA+ Toolbox
 # Exclude all files related to TLA+ Toolbox
-# *.toolbox/**
+*.toolbox/**
 
 *.toolbox/*.launch
 *.toolbox/*.pmap
