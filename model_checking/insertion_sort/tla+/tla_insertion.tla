@@ -10,7 +10,7 @@ CONSTANTS TDATA, TSIZE
 --algorithm insertion_sort {
     variables 
         n,
-        array = [i \in 1..1000 |-> 0],
+        array = [i \in 0..5 |-> 0],
         c,
         d,
         t;       
@@ -39,21 +39,23 @@ CONSTANTS TDATA, TSIZE
             {
                 (* Arrays start at 1 in TLA+, so adding 1 to the indexes *)
                 l9: t := array[d + 1];
-                l10: array[d + 1] := array[d - 1];
-                l11: array[d - 1] := t;
+                l10: array[d + 1] := array[d - 1 + 1];
+                l11: array[d - 1 + 1] := t;
+                
+                l12: d := d - 1;
             };
             
-            l12: c := c + 1;
+            l13: c := c + 1;
         };
         
         (* Program's ending *)
-        l13: print "Sorted list in ascending order:";
+        l14: print "Sorted list in ascending order:";
         
-        l14: c := 0;
-        l15: while(c < n) 
+        l15: c := 0;
+        l16: while(c < n - 1) 
         {
-            l16: print array[c + 1];
-            l17: c := c + 1;
+            l17: print array[c + 1];
+            l18: c := c + 1;
         }
     }
 }
@@ -68,7 +70,7 @@ vars == << n, array, c, d, t, pc >>
 
 Init == (* Global variables *)
         /\ n = defaultInitValue
-        /\ array = [i \in 1..10 |-> 0]
+        /\ array = [i \in 0..5 |-> 0]
         /\ c = defaultInitValue
         /\ d = defaultInitValue
         /\ t = defaultInitValue
@@ -108,7 +110,7 @@ l5 == /\ pc = "l5"
 l6 == /\ pc = "l6"
       /\ IF c <= n - 1
             THEN /\ pc' = "l7"
-            ELSE /\ pc' = "l13"
+            ELSE /\ pc' = "l14"
       /\ UNCHANGED << n, array, c, d, t >>
 
 l7 == /\ pc = "l7"
@@ -119,7 +121,7 @@ l7 == /\ pc = "l7"
 l8 == /\ pc = "l8"
       /\ IF d > 0 /\ array[d + 1] < array[d - 1 + 1]
             THEN /\ pc' = "l9"
-            ELSE /\ pc' = "l12"
+            ELSE /\ pc' = "l13"
       /\ UNCHANGED << n, array, c, d, t >>
 
 l9 == /\ pc = "l9"
@@ -128,51 +130,56 @@ l9 == /\ pc = "l9"
       /\ UNCHANGED << n, array, c, d >>
 
 l10 == /\ pc = "l10"
-       /\ array' = [array EXCEPT ![d + 1] = array[d - 1]]
+       /\ array' = [array EXCEPT ![d + 1] = array[d - 1 + 1]]
        /\ pc' = "l11"
        /\ UNCHANGED << n, c, d, t >>
 
 l11 == /\ pc = "l11"
-       /\ array' = [array EXCEPT ![d - 1] = t]
-       /\ pc' = "l8"
+       /\ array' = [array EXCEPT ![d - 1 + 1] = t]
+       /\ pc' = "l12"
        /\ UNCHANGED << n, c, d, t >>
 
 l12 == /\ pc = "l12"
+       /\ d' = d - 1
+       /\ pc' = "l8"
+       /\ UNCHANGED << n, array, c, t >>
+
+l13 == /\ pc = "l13"
        /\ c' = c + 1
        /\ pc' = "l6"
        /\ UNCHANGED << n, array, d, t >>
 
-l13 == /\ pc = "l13"
+l14 == /\ pc = "l14"
        /\ PrintT("Sorted list in ascending order:")
-       /\ pc' = "l14"
+       /\ pc' = "l15"
        /\ UNCHANGED << n, array, c, d, t >>
 
-l14 == /\ pc = "l14"
+l15 == /\ pc = "l15"
        /\ c' = 0
-       /\ pc' = "l15"
+       /\ pc' = "l16"
        /\ UNCHANGED << n, array, d, t >>
 
-l15 == /\ pc = "l15"
+l16 == /\ pc = "l16"
        /\ IF c < n
-             THEN /\ pc' = "l16"
+             THEN /\ pc' = "l17"
              ELSE /\ pc' = "Done"
        /\ UNCHANGED << n, array, c, d, t >>
 
-l16 == /\ pc = "l16"
+l17 == /\ pc = "l17"
        /\ PrintT(array[c + 1])
-       /\ pc' = "l17"
+       /\ pc' = "l18"
        /\ UNCHANGED << n, array, c, d, t >>
 
-l17 == /\ pc = "l17"
+l18 == /\ pc = "l18"
        /\ c' = c + 1
-       /\ pc' = "l15"
+       /\ pc' = "l16"
        /\ UNCHANGED << n, array, d, t >>
 
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
 Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l5 \/ l6 \/ l7 \/ l8 \/ l9 \/ l10
-           \/ l11 \/ l12 \/ l13 \/ l14 \/ l15 \/ l16 \/ l17
+           \/ l11 \/ l12 \/ l13 \/ l14 \/ l15 \/ l16 \/ l17 \/ l18
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -185,12 +192,9 @@ Termination == <>(pc = "Done")
 \* Assertions
 
 (* Runtime errors *)
-\* Max integer on 16 bits
-MAX == 32768
-
 \* Check domain of var X
 var_in_bound(X) ==
-    /\ (X # defaultInitValue) => X \in 0..MAX
+    /\ (X # defaultInitValue) => X \in Int
 
 \* Check domain of all used vars
 safety_runtime ==
@@ -198,18 +202,21 @@ safety_runtime ==
     /\ var_in_bound(c)
     /\ var_in_bound(d)
     /\ var_in_bound(t)
-    /\ \A val \in DOMAIN array : var_in_bound(val)
+    /\ \A val \in 0..TSIZE : var_in_bound(array[val + 1])
 
 (* Partial correctness *)
-safety_partial_correctness ==
-    /\ pc = "Done" => { <<x, y>> \in array \X array : x >= y}
+\* safety_partial_correctness ==
+\*     /\ pc = "Done" 
+\*         => [p \in 0..TSIZE - 1 |
+\*             -> array[p] >= array[p + 1]]
 
 (* Global check *)
 check ==
-    /\ safety_partial_correctness
+    \* /\ safety_partial_correctness
     /\ safety_runtime
 
 =============================================================================
 \* Modification History
+\* Last modified Tue Jan 28 17:23:52 CET 2020 by Default
 \* Last modified Tue Jan 28 15:03:36 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
