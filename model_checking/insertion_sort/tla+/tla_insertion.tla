@@ -70,7 +70,7 @@ vars == << n, array, c, d, t, pc >>
 
 Init == (* Global variables *)
         /\ n = defaultInitValue
-        /\ array = [i \in 1..10 |-> 0]
+        /\ array = [i \in 0..5 |-> 0]
         /\ c = defaultInitValue
         /\ d = defaultInitValue
         /\ t = defaultInitValue
