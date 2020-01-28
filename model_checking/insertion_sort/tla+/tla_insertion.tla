@@ -20,7 +20,6 @@ CONSTANTS TDATA, TSIZE
     
         (* Array filling *)
         l1: c := 0;
-        
         l2: while (c < n) 
         {
             (* Arrays start at 1 in TLA+, so adding 1 to the indexes *)
@@ -37,7 +36,7 @@ CONSTANTS TDATA, TSIZE
             (* Arrays start at 1 in TLA+, so adding 1 to the indexes *)
             l8: while (d > 0 /\ array[d + 1] < array[d - 1 + 1])
             {
-                (* Arrays start at 1 in TLA+, so adding 1 to the indexes *)
+                (* Arrays start at 1 in TLA+, so add 1 to the indexes *)
                 l9: t := array[d + 1];
                 l10: array[d + 1] := array[d - 1 + 1];
                 l11: array[d - 1 + 1] := t;
@@ -52,7 +51,7 @@ CONSTANTS TDATA, TSIZE
         l14: print "Sorted list in ascending order:";
         
         l15: c := 0;
-        l16: while(c < n - 1) 
+        l16: while(c <= n - 1) 
         {
             l17: print array[c + 1];
             l18: c := c + 1;
@@ -70,7 +69,7 @@ vars == << n, array, c, d, t, pc >>
 
 Init == (* Global variables *)
         /\ n = defaultInitValue
-        /\ array = [i \in 0..5 |-> 0]
+        /\ array = [i \in 1..1000 |-> 0]
         /\ c = defaultInitValue
         /\ d = defaultInitValue
         /\ t = defaultInitValue
@@ -160,7 +159,7 @@ l15 == /\ pc = "l15"
        /\ UNCHANGED << n, array, d, t >>
 
 l16 == /\ pc = "l16"
-       /\ IF c < n - 1
+       /\ IF c <= n - 1
              THEN /\ pc' = "l17"
              ELSE /\ pc' = "Done"
        /\ UNCHANGED << n, array, c, d, t >>
@@ -205,18 +204,31 @@ safety_runtime ==
     /\ \A val \in 0..TSIZE : var_in_bound(array[val + 1])
 
 (* Partial correctness *)
-\* safety_partial_correctness ==
-\*     /\ pc = "Done" 
-\*         => [p \in 0..TSIZE - 1 |
-\*             -> array[p] >= array[p + 1]]
+safety_partial_correctness ==
+    /\ pc = "Done" 
+        => \A val \in 1..TSIZE : 
+            IF val < TSIZE
+                \* Compare the current value with the next one
+                THEN array[val] <= array[val + 1]
+                \* The last value is "ordered" with itself
+                ELSE TRUE 
+
+(* Global invariant *)
+i ==
+    /\ pc \in {
+        "l0", "l1", "l2", "l3", "l4", 
+        "l5", "l6", "l7", "l8", "l9", 
+        "l10", "l11", "l12", "l13", "l14", 
+        "l15", "l16", "l17", "l18", "Done"}
+        \* WiP
 
 (* Global check *)
 check ==
-    \* /\ safety_partial_correctness
+    /\ i
+    /\ safety_partial_correctness
     /\ safety_runtime
 
 =============================================================================
 \* Modification History
-\* Last modified Tue Jan 28 17:45:31 CET 2020 by Default
-\* Last modified Tue Jan 28 15:03:36 CET 2020 by Pierre Bouillon
+\* Last modified Tue Jan 28 20:50:51 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
