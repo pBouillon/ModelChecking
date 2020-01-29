@@ -10,7 +10,7 @@ CONSTANTS TDATA, TSIZE
 --algorithm insertion_sort {
     variables 
         n,
-        array = [i \in 1..1000 |-> 0];
+        array = [i \in 1..1000 |-> defaultInitValue];
         c,
         d,
         t;       
@@ -69,7 +69,7 @@ vars == << n, array, c, d, t, pc >>
 
 Init == (* Global variables *)
         /\ n = defaultInitValue
-        /\ array = [i \in 1..1000 |-> 0]
+        /\ array = [i \in 1..1000 |-> defaultInitValue]
         /\ c = defaultInitValue
         /\ d = defaultInitValue
         /\ t = defaultInitValue
@@ -201,11 +201,11 @@ safety_runtime ==
     /\ var_in_bound(c)
     /\ var_in_bound(d)
     /\ var_in_bound(t)
-    /\ \A val \in 0..TSIZE : var_in_bound(array[val + 1])
+    /\ \A val \in 1..TSIZE : var_in_bound(array[val + 1])
 
 (* Partial correctness *)
 safety_partial_correctness ==
-    /\ pc = "Done" 
+    pc = "Done" 
         => \A val \in 1..TSIZE : 
             IF val < TSIZE
                 \* Compare the current value with the next one
@@ -213,14 +213,99 @@ safety_partial_correctness ==
                 \* The last value is "ordered" with itself
                 ELSE TRUE 
 
-(* Global invariant *)
+(* Invariant *)
+\* Local invariant for each pc
+Il0 ==
+    pc = "l0" =>
+        /\ n = defaultInitValue
+        /\ c = defaultInitValue
+        /\ d = defaultInitValue
+        /\ t = defaultInitValue
+        /\ \A val \in 1..TSIZE : array[val + 1] = defaultInitValue
+
+Il1 ==
+    pc = "l1" =>
+        /\ TRUE
+
+Il2 ==
+    pc = "l2" =>
+        /\ TRUE
+
+Il3 ==
+    pc = "l3" =>
+        /\ TRUE
+
+Il4 ==
+    pc = "l4" =>
+        /\ TRUE
+
+Il5 ==
+    pc = "l5" =>
+        /\ TRUE
+
+Il6 ==
+    pc = "l6" =>
+        /\ TRUE
+
+Il7 ==
+    pc = "l7" =>
+        /\ TRUE
+
+Il8 ==
+    pc = "l8" =>
+        /\ TRUE
+
+Il9 ==
+    pc = "l9" =>
+        /\ TRUE
+
+Il10 ==
+    pc = "l10" =>
+        /\ TRUE
+
+Il11 ==
+    pc = "l11" =>
+        /\ TRUE
+
+Il12 ==
+    pc = "l12" =>
+        /\ TRUE
+
+Il13 ==
+    pc = "l13" =>
+        /\ TRUE
+
+Il14 ==
+    pc = "l14" =>
+        /\ TRUE
+
+Il15 ==
+    pc = "l15" =>
+        /\ TRUE
+
+Il16 ==
+    pc = "l16" =>
+        /\ TRUE
+
+Il17 ==
+    pc = "l17" =>
+        /\ TRUE
+
+Il18 ==
+    pc = "l18" =>
+        /\ TRUE
+
+\* Global invariant
 i ==
     /\ pc \in {
         "l0", "l1", "l2", "l3", "l4", 
         "l5", "l6", "l7", "l8", "l9", 
         "l10", "l11", "l12", "l13", "l14", 
         "l15", "l16", "l17", "l18", "Done"}
-        \* WiP
+    /\ Il0 /\ Il1 /\ Il2 /\ Il3 /\ Il4
+    /\ Il5 /\ Il6 /\ Il7 /\ Il8 /\ Il9
+    /\ Il10 /\ Il11 /\ Il12 /\ Il13 /\ Il14
+    /\ Il15 /\ Il16 /\ Il17 /\ Il18
 
 (* Global check *)
 check ==
@@ -230,5 +315,5 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Tue Jan 28 20:50:51 CET 2020 by Pierre Bouillon
+\* Last modified Wed Jan 29 09:48:28 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
