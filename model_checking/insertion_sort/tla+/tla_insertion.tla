@@ -204,14 +204,18 @@ safety_runtime ==
     /\ \A val \in 1..TSIZE : var_in_bound(array[val + 1])
 
 (* Partial correctness *)
+post_condition ==
+    \* Check if all values within the range of the array are ordered
+    \A val \in 1..TSIZE : 
+        IF val < TSIZE
+        \* Compare the current value with the next one
+        THEN array[val] <= array[val + 1]
+        \* The last value is "ordered" with itself
+        ELSE TRUE 
+            
 safety_partial_correctness ==
     pc = "Done" 
-        => \A val \in 1..TSIZE : 
-            IF val < TSIZE
-                \* Compare the current value with the next one
-                THEN array[val] <= array[val + 1]
-                \* The last value is "ordered" with itself
-                ELSE TRUE 
+        => post_condition
 
 (* Invariant *)
 \* Local invariant for each pc
@@ -225,74 +229,89 @@ Il0 ==
 
 Il1 ==
     pc = "l1" =>
-        /\ TRUE
+        /\ n = TSIZE
 
 Il2 ==
     pc = "l2" =>
-        /\ TRUE
+        /\ c >= 0
+        /\ c <= n
 
 Il3 ==
     pc = "l3" =>
-        /\ TRUE
+        /\ c < n
 
 Il4 ==
     pc = "l4" =>
-        /\ TRUE
+        /\ array[c + 1] = TDATA[c + 1]
 
 Il5 ==
     pc = "l5" =>
-        /\ TRUE
+        /\ c = n
 
 Il6 ==
     pc = "l6" =>
-        /\ TRUE
+        /\ c >= 1
+        /\ c <= n
 
 Il7 ==
     pc = "l7" =>
-        /\ TRUE
+        /\ c <= n - 1 
 
 Il8 ==
     pc = "l8" =>
-        /\ TRUE
+        /\ d <= c
+        /\ d >= 0
+        (* Adding one to all indexes because arrays start at 1 instead of 0 like in C *)
+        \/ array[d + 1] < array[d - 1 + 1]
 
 Il9 ==
     pc = "l9" =>
-        /\ TRUE
+        /\ d <= c
+        /\ d > 0
+        (* Adding one to all indexes because arrays start at 1 instead of 0 like in C *)
+        /\ array[d + 1] < array[d - 1 + 1]
 
 Il10 ==
     pc = "l10" =>
-        /\ TRUE
+        (* Adding one to all indexes because arrays start at 1 instead of 0 like in C *)
+        /\ t = array[d + 1]
 
 Il11 ==
     pc = "l11" =>
-        /\ TRUE
+        (* Adding one to all indexes because arrays start at 1 instead of 0 like in C *)
+        /\ array[d + 1] = array[d - 1 + 1]
 
 Il12 ==
     pc = "l12" =>
-        /\ TRUE
+        (* Adding one to all indexes because arrays start at 1 instead of 0 like in C *)
+        /\ array[d - 1 + 1] = t
 
 Il13 ==
     pc = "l13" =>
-        /\ TRUE
+        /\ d = 0
+        \/ array[d + 1] >= array[d - 1 + 1]
 
 Il14 ==
     pc = "l14" =>
-        /\ TRUE
+        /\ c = n
 
 Il15 ==
     pc = "l15" =>
+        \* `print` statement, nothing to evaluate
         /\ TRUE
 
 Il16 ==
     pc = "l16" =>
-        /\ TRUE
+        /\ c >= 0
+        /\ c <= n
 
 Il17 ==
     pc = "l17" =>
-        /\ TRUE
+        /\ c <= n - 1
 
 Il18 ==
     pc = "l18" =>
+        \* `print` statement, nothing to evaluate
         /\ TRUE
 
 \* Global invariant
@@ -315,5 +334,6 @@ check ==
 
 =============================================================================
 \* Modification History
+\* Last modified Sat Feb 08 18:14:42 CET 2020 by Default
 \* Last modified Wed Jan 29 09:48:28 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
