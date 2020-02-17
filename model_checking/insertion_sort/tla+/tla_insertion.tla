@@ -201,20 +201,20 @@ safety_runtime ==
     /\ var_in_bound(c)
     /\ var_in_bound(d)
     /\ var_in_bound(t)
-    /\ \A val \in 1..TSIZE : var_in_bound(array[val + 1])
+    /\ \A val \in 0..1000 : var_in_bound(array[val + 1])
 
 (* Partial correctness *)
 post_condition ==
     \* Check if all values within the range of the array are ordered
-    \A val \in 1..TSIZE : 
+    \A val \in 0..TSIZE : 
         IF val < TSIZE
         \* Compare the current value with the next one
-        THEN array[val] <= array[val + 1]
+        THEN array[val + 1] <= array[val + 2]
         \* The last value is "ordered" with itself
         ELSE TRUE 
             
 safety_partial_correctness ==
-    pc = "Done" 
+    /\ pc = "Done" 
         => post_condition
 
 (* Invariant *)
@@ -225,7 +225,7 @@ Il0 ==
         /\ c = defaultInitValue
         /\ d = defaultInitValue
         /\ t = defaultInitValue
-        /\ \A val \in 1..TSIZE : array[val + 1] = defaultInitValue
+        /\ \A val \in 0..TSIZE : array[val + 1] = defaultInitValue
 
 Il1 ==
     pc = "l1" =>
@@ -334,6 +334,6 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Sat Feb 08 18:14:42 CET 2020 by Default
+\* Last modified Mon Feb 17 19:41:38 CET 2020 by Default
 \* Last modified Wed Jan 29 09:48:28 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
