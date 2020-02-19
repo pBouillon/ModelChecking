@@ -1,9 +1,11 @@
 --------------------------- MODULE tla_insertion ---------------------------
+
 EXTENDS Integers, Naturals, TLC
 
 CONSTANTS TDATA, TSIZE
 
 ----------------------------------------------------------------------------
+
 \* PlusCal conversion of the algorithm
 
 (*
@@ -61,6 +63,7 @@ CONSTANTS TDATA, TSIZE
 *)
 
 ----------------------------------------------------------------------------
+
 \* BEGIN TRANSLATION
 CONSTANT defaultInitValue
 VARIABLES n, array, c, d, t, pc
@@ -188,6 +191,7 @@ Termination == <>(pc = "Done")
 \* END TRANSLATION
 
 ----------------------------------------------------------------------------
+
 \* Assertions
 
 (* Runtime errors *)
@@ -201,15 +205,15 @@ safety_runtime ==
     /\ var_in_bound(c)
     /\ var_in_bound(d)
     /\ var_in_bound(t)
-    /\ \A val \in 0..1000 : var_in_bound(array[val + 1])
+    /\ \A val \in 1..1000 : var_in_bound(array[val])
 
 (* Partial correctness *)
 post_condition ==
     \* Check if all values within the range of the array are ordered
-    \A val \in 0..TSIZE : 
+    \A val \in 1..TSIZE : 
         IF val < TSIZE
         \* Compare the current value with the next one
-        THEN array[val + 1] <= array[val + 2]
+        THEN array[val] <= array[val + 1]
         \* The last value is "ordered" with itself
         ELSE TRUE 
             
@@ -225,7 +229,7 @@ Il0 ==
         /\ c = defaultInitValue
         /\ d = defaultInitValue
         /\ t = defaultInitValue
-        /\ \A val \in 0..TSIZE : array[val + 1] = defaultInitValue
+        /\ \A val \in 1..TSIZE : array[val] = defaultInitValue
 
 Il1 ==
     pc = "l1" =>
@@ -334,6 +338,6 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Mon Feb 17 19:41:38 CET 2020 by Default
+\* Last modified Wed Feb 19 17:41:17 CET 2020 by Default
 \* Last modified Wed Jan 29 09:48:28 CET 2020 by Pierre Bouillon
 \* Created Mon Jan 13 13:32:31 CET 2020 by Pierre Bouillon
