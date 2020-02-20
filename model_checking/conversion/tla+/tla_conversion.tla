@@ -41,7 +41,7 @@ CONSTANT TO_CONVERT
             }
             
             (* Bumping the counter *)
-            l5: c := c - 1;
+            l8: c := c - 1;
         }
     }
 }
@@ -120,10 +120,13 @@ var_in_bound(X) ==
 
 \* Check domain of all used vars
 safety_runtime ==
-    /\ TRUE
+    /\ var_in_bound(n)
+    /\ var_in_bound(c)
+    /\ var_in_bound(k)
 
 (* Partial correctness *)
 post_condition ==
+    \* TODO: post condition for print only ?
     TRUE
             
 safety_partial_correctness ==
@@ -133,11 +136,54 @@ safety_partial_correctness ==
 (* Invariant *)
 \* Local invariant for each pc
 Il0 ==
-    /\ TRUE
+    pc = "l0" =>
+        /\ n = defaultInitialValue
+        /\ c = defaultInitialValue
+        /\ k = defaultInitialValue
+    
+Il1 ==
+    pc = "l1" =>
+        /\ n = TO_CONVERT
+    
+Il2 ==
+    pc = "l2" =>
+        \* `print` statement, nothing to evaluate
+        /\ TRUE
+    
+Il3 ==
+    pc = "l3" =>
+        /\ c <= 31
+        /\ c >= -1
+    
+Il4 ==
+    pc = "l4" =>
+        /\ c >= 0
+    
+Il5 ==
+    pc = "l5" =>
+        \* TODO: assertion on right shift
+        /\ TRUE
+    
+Il6 ==
+    pc = "l6" =>
+        /\ k % 2 = 1
+    
+Il7 ==
+    pc = "l7" =>
+        \* TODO: assertion on right shift
+        /\ TRUE
+    
+Il8 ==
+    pc = "l18" =>
+        /\ k % 2 = 0
 
 \* Global invariant
 i ==
-    /\ TRUE
+    /\ pc \in {
+        "l0", "l1", "l2", "l3", "l4", 
+        "l5", "l6", "l7", "l8", "Done"}
+    /\ Il0 /\ Il1 /\ Il2 /\ Il3 /\ Il4
+    /\ Il5 /\ Il6 /\ Il7 /\ Il8
 
 (* Global check *)
 check ==
@@ -147,6 +193,6 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Feb 20 07:08:04 CET 2020 by Default
+\* Last modified Thu Feb 20 07:39:42 CET 2020 by Default
 \* Last modified Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
