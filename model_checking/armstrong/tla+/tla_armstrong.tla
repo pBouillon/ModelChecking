@@ -17,40 +17,41 @@ CONSTANTS TDATA, TSIZE
         remainder,
         digits = 0;
     {
-        l0: skip;
+        l0: temp := n;
+        
+        l1: while (temp # 0)
+        {
+            l2: digits := digits + 1;
+            l3: temp := temp / 10;
+        }
+        
+        l4: temp := n;
+        
+        l5: while (temp # 0)
+        {
+            l6: remainder := temp % 10;
+            l7: sum := sum; \* + power(remainder, digits);
+            
+            \* TODO: unwrap sum
+            
+            l8: temp := temp / 10;
+        }
+        
+        l9: if (n = sum)
+        {
+            print << n, " is an Armstrong number" >>;
+        }
+        l10: else
+        {
+            print << n, "is not an Armstrong number" >>;
+        }
     }
 }
 *)
 ----------------------------------------------------------------------------
 
 \* BEGIN TRANSLATION
-CONSTANT defaultInitValue
-VARIABLES n, sum, temp, remainder, digits, pc
 
-vars == << n, sum, temp, remainder, digits, pc >>
-
-Init == (* Global variables *)
-        /\ n = defaultInitValue
-        /\ sum = 0
-        /\ temp = defaultInitValue
-        /\ remainder = defaultInitValue
-        /\ digits = 0
-        /\ pc = "l0"
-
-l0 == /\ pc = "l0"
-      /\ TRUE
-      /\ pc' = "Done"
-      /\ UNCHANGED << n, sum, temp, remainder, digits >>
-
-(* Allow infinite stuttering to prevent deadlock on termination. *)
-Terminating == pc = "Done" /\ UNCHANGED vars
-
-Next == l0
-           \/ Terminating
-
-Spec == Init /\ [][Next]_vars
-
-Termination == <>(pc = "Done")
 
 \* END TRANSLATION
 
@@ -98,6 +99,6 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Feb 20 18:09:22 CET 2020 by Default
+\* Last modified Thu Feb 20 18:19:52 CET 2020 by Default
 \* Last modified Fri Feb 20 18:08:42 CET 2020 by Pierre Bouillon
 \* Created Fri Feb 20 18:08:42 CET 2020 by Pierre Bouillon
