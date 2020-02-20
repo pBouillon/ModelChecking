@@ -1,6 +1,6 @@
 --------------------------- MODULE tla_conversion ---------------------------
 
-EXTENDS Integers, Naturals, TLC
+EXTENDS Integers, TLC
 
 CONSTANT TO_CONVERT
 
@@ -25,9 +25,23 @@ CONSTANT TO_CONVERT
         
         l3: while (c >= 0)
         {
-            (* TODO: conversion logic *)
-        
-            l4: c := c - 1;
+            (* Performing shift: k = n >> c *)
+            \* FIXME: TLA+ shift operator ?
+            l4: k := n >> c;
+            
+            (* Evaluating: k & 1 *)
+            \* FIXME: TLA+ & operator ?
+            l5: if (k % 2 == 1)
+            {
+                l6: print "1";
+            }
+            l7: else
+            {
+                l8: print "0";
+            }
+            
+            (* Bumping the counter *)
+            l5: c := c - 1;
         }
     }
 }
@@ -69,6 +83,16 @@ l3 == /\ pc = "l3"
       /\ UNCHANGED << n, c, k >>
 
 l4 == /\ pc = "l4"
+      /\ k' = (n \div (10 ^ c)) % 10
+      /\ pc' = "l10"
+      /\ UNCHANGED << n, c >>
+
+l10 == /\ pc = "l10"
+       /\ PrintT(k)
+       /\ pc' = "l5"
+       /\ UNCHANGED << n, c, k >>
+
+l5 == /\ pc = "l5"
       /\ c' = c - 1
       /\ pc' = "l3"
       /\ UNCHANGED << n, k >>
@@ -76,7 +100,7 @@ l4 == /\ pc = "l4"
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
-Next == l0 \/ l1 \/ l2 \/ l3 \/ l4
+Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l10 \/ l5
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -123,6 +147,6 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Wed Feb 19 18:19:03 CET 2020 by Default
+\* Last modified Thu Feb 20 07:08:04 CET 2020 by Default
 \* Last modified Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
