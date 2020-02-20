@@ -6,6 +6,9 @@ CONSTANT TO_CONVERT
 
 ----------------------------------------------------------------------------
 
+\* Utilities functions
+right_shift == [to_shift, shifts \in Int |-> 0]
+
 \* PlusCal conversion of the algorithm
 
 (*
@@ -27,11 +30,11 @@ CONSTANT TO_CONVERT
         {
             (* Performing shift: k = n >> c *)
             \* FIXME: TLA+ shift operator ?
-            l4: k := n >> c;
+            l4: k := 0;
             
             (* Evaluating: k & 1 *)
             \* FIXME: TLA+ & operator ?
-            l5: if (k % 2 == 1)
+            l5: if (k % 2 = 1)
             {
                 l6: print "1";
             }
@@ -41,7 +44,7 @@ CONSTANT TO_CONVERT
             }
             
             (* Bumping the counter *)
-            l8: c := c - 1;
+            l9: c := c - 1;
         }
     }
 }
@@ -177,6 +180,11 @@ Il8 ==
     pc = "l18" =>
         /\ k % 2 = 0
 
+Il9 ==
+    pc = "l19" =>
+        \* `print` statement, nothing to evaluate
+        /\ TRUE
+
 \* Global invariant
 i ==
     /\ pc \in {
@@ -193,6 +201,6 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Feb 20 07:39:42 CET 2020 by Default
+\* Last modified Thu Feb 20 17:49:27 CET 2020 by Default
 \* Last modified Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
