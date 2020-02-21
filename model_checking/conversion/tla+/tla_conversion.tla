@@ -1,6 +1,6 @@
 --------------------------- MODULE tla_conversion ---------------------------
 
-EXTENDS Integers, TLC
+EXTENDS Integers, Naturals, Reals, TLC
 
 CONSTANT TO_CONVERT
 
@@ -29,19 +29,10 @@ right_shift == [to_shift, shifts \in Int |-> 0]
         l3: while (c >= 0)
         {
             (* Performing shift: k = n >> c *)
-            \* FIXME: TLA+ shift operator ?
-            l4: k := 0;
+            l4: k := n / (2 ^ c);
             
             (* Evaluating: k & 1 *)
-            \* FIXME: TLA+ & operator ?
-            l5: if (k % 2 = 1)
-            {
-                l6: print "1";
-            }
-            l7: else
-            {
-                l8: print "0";
-            }
+            
             
             (* Bumping the counter *)
             l9: c := c - 1;
@@ -86,16 +77,11 @@ l3 == /\ pc = "l3"
       /\ UNCHANGED << n, c, k >>
 
 l4 == /\ pc = "l4"
-      /\ k' = (n \div (10 ^ c)) % 10
-      /\ pc' = "l10"
+      /\ k' = n / (2 ^ c)
+      /\ pc' = "l9"
       /\ UNCHANGED << n, c >>
 
-l10 == /\ pc = "l10"
-       /\ PrintT(k)
-       /\ pc' = "l5"
-       /\ UNCHANGED << n, c, k >>
-
-l5 == /\ pc = "l5"
+l9 == /\ pc = "l9"
       /\ c' = c - 1
       /\ pc' = "l3"
       /\ UNCHANGED << n, k >>
@@ -103,7 +89,7 @@ l5 == /\ pc = "l5"
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
-Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l10 \/ l5
+Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l9
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -140,9 +126,9 @@ safety_partial_correctness ==
 \* Local invariant for each pc
 Il0 ==
     pc = "l0" =>
-        /\ n = defaultInitialValue
-        /\ c = defaultInitialValue
-        /\ k = defaultInitialValue
+        /\ n = defaultInitValue
+        /\ c = defaultInitValue
+        /\ k = defaultInitValue
     
 Il1 ==
     pc = "l1" =>
@@ -201,6 +187,10 @@ check ==
 
 =============================================================================
 \* Modification History
+\* Last modified Fri Feb 21 17:45:27 CET 2020 by Default
+\* Last modified Fri Feb 21 17:41:20 CET 2020 by Default
+\* Last modified Fri Feb 21 17:38:49 CET 2020 by Default
+\* Last modified Fri Feb 21 17:36:58 CET 2020 by Default
 \* Last modified Thu Feb 20 17:49:27 CET 2020 by Default
 \* Last modified Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
