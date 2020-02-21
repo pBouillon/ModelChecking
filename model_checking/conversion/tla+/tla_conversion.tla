@@ -29,10 +29,10 @@ right_shift == [to_shift, shifts \in Int |-> 0]
         l3: while (c >= 0)
         {
             (* Performing shift: k = n >> c *)
-            l4: k := n / (2 ^ c);
+            l4: k := n \div (2 ^ c);
             
             (* Evaluating: k & 1 *)
-            
+            l5: if (k % 2 = 0) print "1" else print "0";
             
             (* Bumping the counter *)
             l9: c := c - 1;
@@ -77,9 +77,16 @@ l3 == /\ pc = "l3"
       /\ UNCHANGED << n, c, k >>
 
 l4 == /\ pc = "l4"
-      /\ k' = n / (2 ^ c)
-      /\ pc' = "l9"
+      /\ k' = (n \div (2 ^ c))
+      /\ pc' = "l5"
       /\ UNCHANGED << n, c >>
+
+l5 == /\ pc = "l5"
+      /\ IF k % 2 = 0
+            THEN /\ PrintT("1")
+            ELSE /\ PrintT("0")
+      /\ pc' = "l9"
+      /\ UNCHANGED << n, c, k >>
 
 l9 == /\ pc = "l9"
       /\ c' = c - 1
@@ -89,7 +96,7 @@ l9 == /\ pc = "l9"
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
-Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l9
+Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l5 \/ l9
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -187,10 +194,5 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 17:45:27 CET 2020 by Default
-\* Last modified Fri Feb 21 17:41:20 CET 2020 by Default
-\* Last modified Fri Feb 21 17:38:49 CET 2020 by Default
-\* Last modified Fri Feb 21 17:36:58 CET 2020 by Default
-\* Last modified Thu Feb 20 17:49:27 CET 2020 by Default
-\* Last modified Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
+\* Last modified Fri Feb 21 18:10:17 CET 2020 by Default
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
