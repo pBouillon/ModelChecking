@@ -6,9 +6,6 @@ CONSTANT TO_CONVERT
 
 ----------------------------------------------------------------------------
 
-\* Utilities functions
-right_shift == [to_shift, shifts \in Int |-> 0]
-
 \* PlusCal conversion of the algorithm
 
 (*
@@ -123,7 +120,7 @@ safety_runtime ==
 (* Partial correctness *)
 post_condition ==
     \* No post condition to assert, this program
-    \* Does not compute any result
+    \* does not compute any result
     TRUE
             
 safety_partial_correctness ==
