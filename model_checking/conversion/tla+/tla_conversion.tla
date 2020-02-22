@@ -35,7 +35,7 @@ right_shift == [to_shift, shifts \in Int |-> 0]
             l5: if (k % 2 = 0) print "1" else print "0";
             
             (* Bumping the counter *)
-            l9: c := c - 1;
+            l6: c := c - 1;
         }
     }
 }
@@ -85,10 +85,10 @@ l5 == /\ pc = "l5"
       /\ IF k % 2 = 0
             THEN /\ PrintT("1")
             ELSE /\ PrintT("0")
-      /\ pc' = "l9"
+      /\ pc' = "l6"
       /\ UNCHANGED << n, c, k >>
 
-l9 == /\ pc = "l9"
+l6 == /\ pc = "l6"
       /\ c' = c - 1
       /\ pc' = "l3"
       /\ UNCHANGED << n, k >>
@@ -96,7 +96,7 @@ l9 == /\ pc = "l9"
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
-Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l5 \/ l9
+Next == l0 \/ l1 \/ l2 \/ l3 \/ l4 \/ l5 \/ l6
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -122,7 +122,8 @@ safety_runtime ==
 
 (* Partial correctness *)
 post_condition ==
-    \* TODO: post condition for print only ?
+    \* No post condition to assert, this program
+    \* Does not compute any result
     TRUE
             
 safety_partial_correctness ==
@@ -157,24 +158,15 @@ Il4 ==
     
 Il5 ==
     pc = "l5" =>
-        \* TODO: assertion on right shift
-        /\ TRUE
-    
+        \* `k` should be the result of the right shift
+        \* of `n` by `c`
+        /\ k = n \div 2 ^ c
+        \* `k` should give the binary equivalent of the current
+        \* power of two
+        /\ (k = 1 \/ k = 0)
+
 Il6 ==
     pc = "l6" =>
-        /\ k % 2 = 1
-    
-Il7 ==
-    pc = "l7" =>
-        \* TODO: assertion on right shift
-        /\ TRUE
-    
-Il8 ==
-    pc = "l18" =>
-        /\ k % 2 = 0
-
-Il9 ==
-    pc = "l19" =>
         \* `print` statement, nothing to evaluate
         /\ TRUE
 
@@ -182,9 +174,9 @@ Il9 ==
 i ==
     /\ pc \in {
         "l0", "l1", "l2", "l3", "l4", 
-        "l5", "l6", "l7", "l8", "Done"}
+        "l5", "l6", "Done"}
     /\ Il0 /\ Il1 /\ Il2 /\ Il3 /\ Il4
-    /\ Il5 /\ Il6 /\ Il7 /\ Il8
+    /\ Il5 /\ Il6
 
 (* Global check *)
 check ==
@@ -194,5 +186,5 @@ check ==
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 18:10:17 CET 2020 by Default
+\* Last modified Sat Feb 22 10:49:33 CET 2020 by Default
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
