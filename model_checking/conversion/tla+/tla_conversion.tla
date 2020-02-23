@@ -21,7 +21,9 @@ CONSTANT TO_CONVERT
         l1: print << n, " in binary number system is:" >>;
         
         (* Begin conversion *)
-        l2: c := 31;
+        \* 16 bits version due to integer overflow
+        \* see the report for more details
+        l2: c := 16;
         
         l3: while (c >= 0)
         {
@@ -29,7 +31,7 @@ CONSTANT TO_CONVERT
             l4: k := n \div (2 ^ c);
             
             (* Evaluating: k & 1 *)
-            l5: if (k % 2 = 0) print "1" else print "0";
+            l5: if (k % 2 = 1) print "1" else print "0";
             
             (* Bumping the counter *)
             l6: c := c - 1;
@@ -63,7 +65,7 @@ l1 == /\ pc = "l1"
       /\ UNCHANGED << n, c, k >>
 
 l2 == /\ pc = "l2"
-      /\ c' = 31
+      /\ c' = 16
       /\ pc' = "l3"
       /\ UNCHANGED << n, k >>
 
@@ -79,7 +81,7 @@ l4 == /\ pc = "l4"
       /\ UNCHANGED << n, c >>
 
 l5 == /\ pc = "l5"
-      /\ IF k % 2 = 0
+      /\ IF k % 2 = 1
             THEN /\ PrintT("1")
             ELSE /\ PrintT("0")
       /\ pc' = "l6"
@@ -157,10 +159,7 @@ Il5 ==
     pc = "l5" =>
         \* `k` should be the result of the right shift
         \* of `n` by `c`
-        /\ k = n \div 2 ^ c
-        \* `k` should give the binary equivalent of the current
-        \* power of two
-        /\ (k = 1 \/ k = 0)
+        /\ k = n \div (2 ^ c)
 
 Il6 ==
     pc = "l6" =>
@@ -183,5 +182,6 @@ check ==
 
 =============================================================================
 \* Modification History
+\* Last modified Sun Feb 23 19:09:23 CET 2020 by Default
 \* Last modified Sat Feb 22 10:49:33 CET 2020 by Default
 \* Created Wed Feb 19 18:01:15 CET 2020 by Pierre Bouillon
