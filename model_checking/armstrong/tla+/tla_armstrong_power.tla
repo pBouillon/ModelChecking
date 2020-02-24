@@ -9,7 +9,7 @@ CONSTANTS N, R
 \* PlusCal conversion of the algorithm
 
 (*
---algorithm conversion {
+--algorithm power {
     variables 
         c,
         p,
