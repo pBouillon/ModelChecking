@@ -14,10 +14,10 @@ int main()
     */	
     for (c = 31; c >= 0; c--)
     {
-	/*@assert c >= 0; */;
+	/*@assert c >= 0; */
         k = n >> c ;
 
-	/*@assert k == n >> c; */;
+	/*@assert k == n >> c; */
         if (k & 1)
         {
             printf ("1") ;
