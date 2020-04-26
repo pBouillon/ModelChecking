@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="sum ≔ 0" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="temp :∈ ℕ" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="remainder :∈ ℕ" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="digits ≔ 0" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="pc ≔ l1" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="contextArmstrong"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="sum"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="temp"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="remainder"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="digits"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="pc"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv1" org.eventb.core.predicate="sum ∈ ℕ"/>
+<org.eventb.core.invariant name="/" org.eventb.core.label="inv2" org.eventb.core.predicate="temp ∈ ℕ"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv3" org.eventb.core.predicate="remainder ∈ ℕ"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv4" org.eventb.core.predicate="digits ∈ ℕ"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="inv5" org.eventb.core.predicate="pc ∈ L"/>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="el1l0">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="pc = l1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="temp ≔ n" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="pc ≔ l0" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="el0l0">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="pc = l0"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="temp ≠ 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="digits ≔ digits + 1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="temp ≔ temp ÷ 10 " org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="el0l2">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="pc = l0"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="temp = 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="temp ≔ n" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="pc ≔ l2" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="el2l3">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="pc = l2"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="temp ≠ 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="remainder ≔ temp mod 10" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="pc ≔ l3" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="el3l2">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="pc = l3"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="sum ≔ sum + remainder ^ digits" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="temp ≔ temp ÷ 10" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="pc ≔ l2" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="8" org.eventb.core.label="pre" org.eventb.core.predicate="sum ∈ ℕ ∧ temp ∈ ℕ ∧ remainder ∈ ℕ ∧ digits ∈ ℕ ∧ pc ∈ L"/>
+</org.eventb.core.machineFile>
