@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="c'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="c'∈ℕ"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l3},{l4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="−1∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="L={l1,l2,l3,l4}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l3=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el2l4/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l3},{l4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="L={l1,l2,l3,l4}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="0≤2"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l2=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l3=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="2 ^ c≠0">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬2 ^ c=0">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el2l4/act1/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l0},{l2},{l4},{l6}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="k∈ℤ">
+<org.eventb.core.prIdent name="k" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="c≥0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l0=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬2 ^ c=0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="0≤2∧⊤∧2 ^ c≠0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l0=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l0=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬l4=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0≤2∧0≤c∧2 ^ c≠0"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l2=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="L={l0,l2,l4,l6}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el4l6/inv1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l0},{l2},{l4},{l6}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="k∈ℤ">
+<org.eventb.core.prIdent name="k" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l0=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l0=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬l0=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l4=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="L={l0,l2,l4,l6}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="TO_CONVERT" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="TO_CONVERT∈ℕ"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el1l2/act1/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l3},{l4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p13"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="k∈ℤ">
+<org.eventb.core.prIdent name="k" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="0≤c"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="L={l1,l2,l3,l4}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="0≤c∧¬2 ^ c=0"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬2 ^ c=0"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l3=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0≤2∧0≤c∧2 ^ c≠0"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l3},{l4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="L={l1,l2,l3,l4}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l3=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act3/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l3},{l4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="L={l1,l2,l3,l4}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l3=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el1l2/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l4},{l6}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(L,{l1},{l2},{l4},{l6})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="L={l1,l2,l4,l6}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="k∈ℤ">
+<org.eventb.core.prIdent name="k" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l4=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el1l2/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l1},{l2},{l3},{l4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="L={l1,l2,l3,l4}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="32∈ℕ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l1=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l1=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l3">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l1=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l3=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el6l4/act2/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l0},{l2},{l4},{l6}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="k∈ℤ">
+<org.eventb.core.prIdent name="k" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="c≥0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l0=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬2 ^ c=0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="0≤2∧⊤∧2 ^ c≠0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l0=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l0=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬l4=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0≤2∧0≤c∧2 ^ c≠0"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l2=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="L={l0,l2,l4,l6}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el0l2/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l0},{l2},{l4},{l6}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="k∈ℤ">
+<org.eventb.core.prIdent name="k" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="pc∈L">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l0=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l0=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬l0=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l4=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="L={l0,l2,l4,l6}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="el0l2/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(L,{l0},{l2},{l4},{l6}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="32∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬l0=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬l0=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬l0=l2">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬l4=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬l2=l4">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬l2=l6">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="L={l0,l2,l4,l6}">
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.prIdent name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.prIdent name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
