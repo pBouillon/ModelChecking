@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.axiom#axm1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm5" org.eventb.core.predicate="n≥1" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.axiom#cst=" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm4" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4},{l5},{l6},{l7},{l8})" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.axiom#axm4" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="L" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.scConstant name="l1" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst4" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l2" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst5" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l3" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst6" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l4" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst7" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l5" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst8" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l6" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst:" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l7" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst9" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l8" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst;" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/insertion/insertionContext.buc|org.eventb.core.contextFile#insertionContext|org.eventb.core.constant#cst1" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>
