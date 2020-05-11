@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+<org.eventb.core.carrierSet name="set1" org.eventb.core.identifier="L"/>
+<org.eventb.core.constant name="cst1" org.eventb.core.identifier="n"/>
+<org.eventb.core.constant name="cst4" org.eventb.core.identifier="l1"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst5" org.eventb.core.identifier="l2"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst6" org.eventb.core.identifier="l3"/>
+<org.eventb.core.constant name="cst7" org.eventb.core.identifier="l4"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst8" org.eventb.core.identifier="l5"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst9" org.eventb.core.identifier="l6"/>
+<org.eventb.core.constant name="cst13" org.eventb.core.identifier="l7"/>
+<org.eventb.core.constant name="cst10" org.eventb.core.identifier="l8"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="axm1" org.eventb.core.predicate="n ∈ ℕ"/>
+<org.eventb.core.axiom name="axm4" org.eventb.core.label="axm4" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4},{l5},{l6},{l7},{l8},{l9},{l10},{l11})"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst11" org.eventb.core.identifier="l9"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst12" org.eventb.core.identifier="l10"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="cst14" org.eventb.core.identifier="l11"/>
+</org.eventb.core.contextFile>

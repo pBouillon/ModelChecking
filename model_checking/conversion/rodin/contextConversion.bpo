@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.poIdentifier name="TO_CONVERT" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="l0" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l6" org.eventb.core.type="L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Conversion/contextConversion.bpo|org.eventb.core.poFile#contextConversion|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TO_CONVERT∈ℕ" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.axiom#\/"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

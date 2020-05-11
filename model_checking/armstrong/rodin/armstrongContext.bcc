@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.axiom#axm1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm4" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4},{l5},{l6},{l7},{l8},{l9},{l10},{l11})" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.axiom#axm4" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="L" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.carrierSet#set1" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.scConstant name="l1" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst4" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l10" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst12" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l11" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst14" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l2" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst5" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l3" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst6" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l4" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst7" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l5" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst8" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l6" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst9" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l7" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst13" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l8" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst10" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l9" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst11" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.constant#cst1" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

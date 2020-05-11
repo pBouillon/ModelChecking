@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(L,{l0},{l2},{l4},{l6})" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="TO_CONVERT∈ℕ" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="L" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.scConstant name="TO_CONVERT" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.constant#." org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant name="l0" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.constant#)" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l2" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.constant#*" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l4" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.constant#+" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant name="l6" org.eventb.core.source="/Conversion/contextConversion.buc|org.eventb.core.contextFile#contextConversion|org.eventb.core.constant#," org.eventb.core.type="L"/>
+</org.eventb.core.scContextFile>
