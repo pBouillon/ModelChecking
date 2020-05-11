@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm2" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="L" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l1" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.constant#-" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l2" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.constant#*" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l3" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.constant#+" org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="l4" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.constant#," org.eventb.core.type="L"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="true" name="n" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.constant#(" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>
