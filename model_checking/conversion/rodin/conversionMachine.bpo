@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.poIdentifier name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="l5" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="l6" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4})" org.eventb.core.source="/conversion/conversionContext.buc|org.eventb.core.contextFile#conversionContext|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="pc" org.eventb.core.type="L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#HYPconversionContexw"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤2∧0≤c∧2 ^ c≠0∧0≤n ÷ 2 ^ c∧0&lt;2" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#HYPconversionContexw"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex{"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="31∈ℕ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#HYPconversionContexw|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex{">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="k'∈ℤ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l1=l1⇒n∈ℕ∧k'∈ℤ∧31∈ℕ∧l1∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#INITIALISATION\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex{">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="k'∈ℤ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l1=l4⇒n∈ℕ∧k'∈ℤ∧31=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#INITIALISATION\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act4/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex{"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℤ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex{"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTconversionContex{" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="k'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="c'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPconversionContex{" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTIDENTconversionContex{" org.eventb.core.poStamp="81"/>
+<org.eventb.core.poSequent name="el1l2/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l1⇒n∈ℕ∧n ÷ 2 ^ c∈ℤ∧c∈ℕ∧l2∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el1l2\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l2/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l4⇒n∈ℕ∧n ÷ 2 ^ c∈ℤ∧c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el1l2\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l2/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤2∧0≤c∧2 ^ c≠0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#0|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#0|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex\|"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTconversionContex|" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="k'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPconversionContex|" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTIDENTconversionContex\|" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l1" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c≥1" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#0|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el2l3/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c − 1∈ℕ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el2l3\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#HYPconversionContexw|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el2l3/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l3=l1⇒n∈ℕ∧k∈ℤ∧c − 1∈ℕ∧l3∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el2l3\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el2l3/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l3=l4⇒n∈ℕ∧k∈ℤ∧c − 1=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el2l3\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTconversionContex}" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="c'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPconversionContex}" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTIDENTconversionContex}" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l2" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c≥1" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el3l2/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l1⇒n∈ℕ∧n ÷ 2 ^ c∈ℤ∧c∈ℕ∧l2∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el3l2\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l2/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l4⇒n∈ℕ∧n ÷ 2 ^ c∈ℤ∧c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el3l2\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l2/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤2∧0≤c∧2 ^ c≠0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#4|org.eventb.core.action#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#4|org.eventb.core.action#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContex~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTconversionContex~" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="k'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPconversionContex~" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTIDENTconversionContex~" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l3" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c≥1" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el1l4/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContey'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l1⇒n∈ℕ∧k∈ℤ∧c∈ℕ∧l4∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el1l4\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l4/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContey'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l4⇒n∈ℕ∧k∈ℤ∧c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el1l4\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTconversionContey'" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPconversionContey'" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTIDENTconversionContey'" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l1" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#6|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el3l4/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContey("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l1⇒n∈ℕ∧k∈ℤ∧c∈ℕ∧l4∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el3l4\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l4/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTALLHYPconversionContey("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l4⇒n∈ℕ∧k∈ℤ∧c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poSequent#el3l4\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTconversionContey(" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPconversionContey(" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#EVTIDENTconversionContey(" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l3" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#7|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.event#7|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPconversionContexw" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="k∈ℤ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c∈ℕ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="pc∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/conversion/conversionMachine.bpo|org.eventb.core.poFile#conversionMachine|org.eventb.core.poPredicateSet#HYPconversionContexw" org.eventb.core.poStamp="81">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="n ÷ 2 ^ c mod 2∈ℤ" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#9"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="pc=l1⇒n∈ℕ∧k∈ℤ∧c∈ℕ∧pc∈L" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#5"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="pc=l4⇒n∈ℕ∧k∈ℤ∧c=0" org.eventb.core.source="/conversion/conversionMachine.bum|org.eventb.core.machineFile#conversionMachine|org.eventb.core.invariant#8"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
