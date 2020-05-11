@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poIdentifier name="L" org.eventb.core.type="ℙ(L)"/>
+<org.eventb.core.poIdentifier name="l1" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l10" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l11" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l2" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l3" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l4" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l5" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l6" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l7" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l8" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="l9" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="l12" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.axiom#axm1"/>
+<org.eventb.core.poPredicate name="l13" org.eventb.core.predicate="partition(L,{l1},{l2},{l3},{l4},{l5},{l6},{l7},{l8},{l9},{l10},{l11})" org.eventb.core.source="/armstrong/armstrongContext.buc|org.eventb.core.contextFile#armstrongContext|org.eventb.core.axiom#axm4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="8">
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="digits" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="pc" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="remainder" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="sum" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="temp" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="sum'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sum'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="p'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="p'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="c'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="remainder'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="remainder'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="digits'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="digits'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="sum'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#-"/>
+<org.eventb.core.poPredicate name="(" org.eventb.core.predicate="p'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act1"/>
+<org.eventb.core.poPredicate name=")" org.eventb.core.predicate="c'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act2"/>
+<org.eventb.core.poPredicate name="*" org.eventb.core.predicate="remainder'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act3"/>
+<org.eventb.core.poPredicate name="+" org.eventb.core.predicate="digits'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l1=l1⇒sum'∈ℕ∧n∈ℕ∧p'∈ℕ∧c'∈ℕ∧remainder'∈ℕ∧digits'∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l1=l11⇒n=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#INITIALISATION\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act7/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act8/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act1"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act9/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act2"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act10/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act3"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act11/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#evt1|org.eventb.core.action#act4"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContex~"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContex~" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="44">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="digits'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="c'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="remainder'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="p'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="sum'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="temp'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContex~" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContex~" org.eventb.core.poStamp="44"/>
+<org.eventb.core.poSequent name="el1l2/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="digits+1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el1l2\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l2/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits+1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el1l2\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l2/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el1l2\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey'" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="digits'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey'" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey'" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l1" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var:|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var:|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el2l3/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey('"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="10≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey('"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el2l3/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="temp ÷ 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el2l3\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el2l3/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l3=l1⇒sum∈ℕ∧temp ÷ 10∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el2l3\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el2l3/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l3=l11⇒temp ÷ 10=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el2l3\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el2l3/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="10≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey(" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="temp'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYParmstrongContey('" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey(" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l2" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey(" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey('" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp ÷ 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var;|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el3l2/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="digits+1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el3l2\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l2/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits+1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el3l2\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l2/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l2=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el3l2\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey)" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="digits'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey)" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey)" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l3" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var=|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var=|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el3l4/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var&gt;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el3l4\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l4/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l1⇒sum∈ℕ∧n∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var&gt;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el3l4\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el3l4/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l11⇒n=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var&gt;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el3l4\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey*" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="temp'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey*" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey*" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var&gt;|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pc=l3" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var&gt;|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el1l4/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el1l4\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l4/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l1⇒sum∈ℕ∧n∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el1l4\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el1l4/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l4=l11⇒n=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el1l4\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey+" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="temp'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey+" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey+" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var?|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pc=l1" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var?|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el4l5/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey,("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤temp∧0&lt;10" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.guard#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.guard#+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey,("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el4l5/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="temp mod 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el4l5\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el4l5/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l5=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧temp mod 10∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el4l5\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el4l5/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l5=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el4l5\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el4l5/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤temp∧0&lt;10" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey,"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey," org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="remainder'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYParmstrongContey,(" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey," org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l4" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey," org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey,(" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="temp mod 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#var@|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el5l6/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el5l6\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el5l6/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el5l6\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el5l6/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l6=l1⇒sum∈ℕ∧temp∈ℕ∧1∈ℕ∧1∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el5l6\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el5l6/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l6=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el5l6\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey-" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="c'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="p'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey-" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey-" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l5" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varA|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el6l7/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="p∗remainder∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varB"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el6l7\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el6l7/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l7=l1⇒sum∈ℕ∧temp∈ℕ∧p∗remainder∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varB"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el6l7\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el6l7/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l7=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varB"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el6l7\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey." org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="p'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey." org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey." org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l6" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varB|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c≤digits" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varB|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el7l8/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c+1∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el7l8\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el7l8/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l8=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c+1∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el7l8\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el7l8/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l8=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el7l8\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey/" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="c'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey/" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey\/" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l7" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varC|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el8l7/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey0"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="p∗remainder∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varD"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el8l7\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el8l7/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey0"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l7=l1⇒sum∈ℕ∧temp∈ℕ∧p∗remainder∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varD"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el8l7\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el8l7/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey0"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l7=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varD"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el8l7\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey0" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="p'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey0" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey0" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l8" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varD|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c≤digits" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varD|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el8l9/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey1"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sum+p∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varE"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el8l9\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el8l9/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey1"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l9=l1⇒sum+p∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varE"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el8l9\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el8l9/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey1"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l9=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varE"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el8l9\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey1" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="sum'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey1" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey1" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c&gt;digits" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varE|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pc=l8" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varE|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el6l9/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sum+p∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varF"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el6l9\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el6l9/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l9=l1⇒sum+p∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varF"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el6l9\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el6l9/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l9=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varF"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el6l9\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey2" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="sum'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey2" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey2" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l6" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varF|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c&gt;digits" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varF|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el9l10/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey3'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="10≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey3'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el9l10/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="temp ÷ 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el9l10\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el9l10/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l10=l1⇒sum∈ℕ∧temp ÷ 10∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el9l10\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el9l10/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l10=l11⇒temp ÷ 10=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el9l10\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el9l10/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="10≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey3" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="temp'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYParmstrongContey3'" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey3" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l9" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey3" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey3'" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp ÷ 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varG|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el10l11/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey4"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l11=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el10l11\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el10l11/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey4"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l11=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el10l11\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey4" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey4" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey4" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l10" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varH|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varH|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el10l5/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey5("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤temp∧0&lt;10" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.guard#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.guard#+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey5("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el10l5/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey5"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="temp mod 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el10l5\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el10l5/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey5"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l5=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧temp mod 10∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el10l5\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el10l5/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey5"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l5=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el10l5\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el10l5/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey5"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤temp∧0&lt;10" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey5" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+<org.eventb.core.poIdentifier name="remainder'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYParmstrongContey5(" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey5" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l10" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp≠0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey5" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTHYParmstrongContey5(" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="temp mod 10∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varI|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="el4l11/pre/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey6"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l11=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el4l11\/pre\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="el4l11/post/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTALLHYParmstrongContey6"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="l11=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poSequent#el4l11\/post\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTarmstrongContey6" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="pc'" org.eventb.core.type="L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYParmstrongContey6" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#EVTIDENTarmstrongContey6" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc=l4" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varJ|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.event#varJ|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/armstrong/armstrongMachine.bpo|org.eventb.core.poFile#armstrongMachine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pc∈L" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var8"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sum∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#var9"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="temp∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="p∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv3"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="c∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv4"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="remainder∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv5"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#inv6"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="pc=l1⇒sum∈ℕ∧temp∈ℕ∧p∈ℕ∧c∈ℕ∧remainder∈ℕ∧digits∈ℕ" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varK"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="pc=l11⇒temp=0" org.eventb.core.source="/armstrong/armstrongMachine.bum|org.eventb.core.machineFile#armstrongMachine|org.eventb.core.invariant#varL"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
